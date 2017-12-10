@@ -38,10 +38,10 @@ module.exports = {
   devServer: {
     proxy: {
       "/v1": {
-      "target": 'https://api.mcmakler.de/v1/',
-      "pathRewrite": { '^/v1': '' },
-      "changeOrigin": true,
-      "secure": false
+      target: 'https://api.mcmakler.de/v1/',
+      pathRewrite: { '^/v1': '' },
+      changeOrigin: true,
+      secure: false
       }
     }
   

@@ -16,12 +16,11 @@ body {
 
 * {
   font-family: 'Lato', Helvetica, sans-serif;
-  color: #333447;
+  color: #4f5051;
 }
 
 [class*='row'],
 [class*='col-'],
-[class*='mobile-'],
 .row:after {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -77,7 +76,6 @@ body {
     text-align: center;
     color: white;
     margin: 10px;
-    margin-left: 15px;
     top:10px;
     border: 1px solid #d7d9dd;
     height:400px;
@@ -85,16 +83,35 @@ body {
 }
 .card-title{
     text-align: left;
+    font-size: 16px;
 }
 .card-block{
  padding : 10px;
 }
 
-.street-name{
+.card-text{
+  width:100%;
+ padding : 10px;
+}
+
+.address{
+  text-align: left;
+  font-size:14px;
+  font-weight:700;
+  color : #9fa3a8
+}
+
+.price-description{
+  padding:10%
+}
+
+.purpose{
     position: absolute;
+    font-weight: 700;
+    color:#9fa3a8;
     background-color:#fff;
     padding: 10px;
-    top: 8px;
+    top: 16px;
     left: 16px;
 }
 
