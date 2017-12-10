@@ -21,6 +21,9 @@ module.exports = {
     ],
   },
   plugins: [
-    new HtmlWebpackPlugin()
+    new HtmlWebpackPlugin({
+      title: 'McMackler Interview App',
+      template: './index.html'
+    })
   ],
 };
