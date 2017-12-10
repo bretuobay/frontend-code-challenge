@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const proxy = require('http-proxy-middleware');
 
 module.exports = {
   entry: './index.js',
@@ -16,9 +17,34 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ['style-loader'],
+        use: [
+          { loader: "style-loader" },
+          { loader: "css-loader" }
+        ],
       },
     ],
+    loaders: [{
+      test: /\.(js|jsx)$/,
+      exclude: /node_modules/,
+      loader: 'babel',
+      query: {
+        presets: ['react', 'es2015', 'stage-1']
+      }
+    }]
+  },
+  resolve: {
+    extensions: [ '.js', '.jsx']
+  },
+  devServer: {
+    proxy: {
+      "/v1": {
+      "target": 'https://api.mcmakler.de/v1/',
+      "pathRewrite": { '^/v1': '' },
+      "changeOrigin": true,
+      "secure": false
+      }
+    }
+  
   },
   plugins: [
     new HtmlWebpackPlugin({
