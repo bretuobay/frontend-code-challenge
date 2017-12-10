@@ -1,0 +1,100 @@
+
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic);
+
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  font-size: 100%;
+}
+
+* {
+  font-family: 'Lato', Helvetica, sans-serif;
+  color: #333447;
+}
+
+[class*='row'],
+[class*='col-'],
+[class*='mobile-'],
+.row:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;	
+}
+
+[class*='col-'] {
+	float: left;
+    height: 400px;
+}
+
+[class*='col-'] [class*='col-']:last-child {
+	padding-right: 0;
+}
+
+.row {
+	width: 100%;
+	max-width: 1140px;
+	min-width: 748px; 
+	margin: 0 auto;
+  overflow: hidden;
+  
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.row-pad {
+	padding-top: 20px;
+	padding-left: 20px; 
+	padding-right: 0; 
+}
+
+.push-right {
+	float: right;
+}
+
+
+.col-4 {
+  margin-top:20px;
+	width: 33.33%;
+}
+
+.adverts-container{
+  border-style: thin;
+}
+
+.card{
+    position: relative;
+    text-align: center;
+    color: white;
+    margin: 10px;
+    margin-left: 15px;
+    top:10px;
+    border: 1px solid #929293;
+    height:400px;
+   
+}
+.card-title{
+    text-align: left;
+}
+.card-block{
+ padding : 10px;
+}
+
+.street-name{
+    position: absolute;
+    background-color:#fff;
+    padding: 10px;
+    top: 8px;
+    left: 16px;
+}
+
