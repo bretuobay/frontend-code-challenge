@@ -19,7 +19,7 @@ export const CardContentContainer = ({ advert }) => {
 
         <div className="card-text price-description">
           <span>
-            <span>{advert.advertisementPrice.baseRent} €</span> &nbsp;
+            <span className="price-tag">{advert.advertisementPrice.baseRent} €</span> &nbsp;
           </span>
 
           <span>
