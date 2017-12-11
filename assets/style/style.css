@@ -60,12 +60,19 @@ body {
     border: 1px solid #d7d9dd;
     height: 400px;
 }
+
+
+.card-img-top{
+    height: 100%;
+    width: 100%;
+}
 .card-title {
     text-align: left;
     font-size: 16px;
 }
 .card-block {
     padding: 10px;
+    height:200px;
 }
 .card-text {
     width: 100%;
@@ -79,7 +86,12 @@ body {
     text-align: left;
     font-size: 14px;
     font-weight: 700;
-    color: #9fa3a8
+    color: #f2f4f7;
+    letter-spacing: 2px;
+    opacity: 0.6
+}
+.space{
+    border-left: 1px solid #d7d9dd;
 }
 .price-description {
     margin-top: 30px;

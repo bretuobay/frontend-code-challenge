@@ -2,12 +2,7 @@ import React from "react";
 
 export const CardContentContainer = ({ advert }) => {
   return (
-    <div
-      style={{
-        height: "50%",
-        width: "100%"
-      }}
-    >
+    <div>
       <div className="card-block">
         <div className="card-row">
           <h5 className="card-title">{advert.title}</h5>
@@ -25,10 +20,10 @@ export const CardContentContainer = ({ advert }) => {
               </span>{" "}
               &nbsp;
             </span>
-
             <span>
               <span>{advert.realestateSummary.numberOfRooms} Zimmer</span>{" "}
-              <span> | ab </span>{" "}
+              &nbsp; &nbsp;
+              <span className="space"> &nbsp; &nbsp; ab </span>{" "}
               <span>
                 {advert.realestateSummary.space.toFixed(2)} m<sup>2</sup>
               </span>
