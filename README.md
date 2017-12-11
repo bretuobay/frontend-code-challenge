@@ -14,3 +14,19 @@ The main challenges encoutered were:
 * Understanding what picture to use. In the end I chose to simply go with the first image(Maybe a carousel in a  real app?)
 * Understanding what various sections from the design were meant for( I thought Mieten and Kaufen were cities :) )
 
+## Instructions
+
+```
+git clone https://github.com/bretuobay/frontend-code-challenge.git
+
+cd frontend-code-challenge
+
+npm install 
+
+npm start 
+
+```
+
+
+
+
