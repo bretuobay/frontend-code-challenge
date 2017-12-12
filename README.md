@@ -9,7 +9,7 @@ This is a react/redux solution to McMakler's front end interview:
 
 ## Fun parts
 
-1. Was fun and interesting setting up React/Redux from scratch setting up.
+1. Was fun and interesting setting up React/Redux from scratch.
 
 ## Main Challenge encountered
 
